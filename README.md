@@ -1,5 +1,5 @@
 # dotfiles
-> Running Terminal.app (zsh shell) with **[Spaceship theme]**(https://github.com/denysdovhan/spaceship-prompt) and **[tmux]**(https://github.com/tmux/tmux).
+> Running Terminal.app (zsh shell) with [**Spaceship theme**](https://github.com/denysdovhan/spaceship-prompt) and [**tmux**](https://github.com/tmux/tmux).
 
 ![Terminal screenshot](screenshot.png)
 
