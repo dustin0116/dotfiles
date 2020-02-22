@@ -5,7 +5,7 @@
 
 ## About
 
-I created this for symlinking my config files across different devices.
+I created this for symlinking my config files in a GitHub repo so I could sync across different devices.
 
 ## Files
 
