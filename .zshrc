@@ -5,10 +5,13 @@ if [ "$TMUX" = "" ]; then tmux; fi
 export PATH="$PATH:$HOME/.rvm/bin"
 
 #Tab menu.
+#autoload -Uz compinit
+#compinit
+#zstyle ':completion:*' menu select
+#zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 autoload -Uz compinit
 compinit
-zstyle ':completion:*' menu select
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' menu yes select
 
 # ZSH THEME.
 autoload -U promptinit; promptinit
@@ -28,3 +31,8 @@ alias reload='source ~/.zshrc'
 
 #Others
 eval "$(nodenv init -)"
+
+#ZSH Syntax Highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
