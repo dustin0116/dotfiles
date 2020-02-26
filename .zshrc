@@ -35,4 +35,9 @@ eval "$(nodenv init -)"
 #ZSH Syntax Highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+#ZSH Autosuggestion
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=7"
+
+#fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
