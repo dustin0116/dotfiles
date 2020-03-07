@@ -1,23 +1,29 @@
-"Line number
+" Set line highlight
+set cursorline
+highlight CursorLine term=NONE cterm=NONE ctermbg=darkgrey
+
+" Line number
 set number
+hi CursorLineNr term=bold cterm=bold ctermbg=darkgrey
 
-"Syntax colors
+" Interface colors
 syntax on
+hi Pmenu ctermbg=blue
+hi PmenuSel ctermbg=white
 
-"Mouse interation
+" Mouse interation
 set mouse=a
-
-"Command-line options
+" Command-line options
 set wildmenu
 
-"Indentation by file type
+" Indentation by file type
 filetype indent plugin on
-set shiftwidth=4
+set shiftwidth=2
 set softtabstop=0 noexpandtab
-set tabstop=4
+set tabstop=2
 
-"Colors
-highlight SignColumn ctermbg=darkgray guibg=gray
+" Colors
+hi clear SignColumn
 
 "NERDTree
 autocmd VimEnter * NERDTree | wincmd p
@@ -33,10 +39,14 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-let NERDTreeHighlightCursorline = 0
+let NERDTreeHighlightCursorline = 0 
 let NERDTreeMinimalUI = 1
 
-"Coc.vim"
+" ALE Settings
+hi ALEError ctermfg=darkred ctermbg=none cterm=underline,bold
+hi ALEWarning ctermfg=yellow ctermbg=none cterm=underline
+
+" Coc.vim"
 " if hidden is not set, TextEdit might fail.
 set hidden
 
